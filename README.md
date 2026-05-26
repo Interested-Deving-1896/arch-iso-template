@@ -1,40 +1,75 @@
-# MX/antiX Arch ISO Template
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# arch-iso-template
 
-This repository packages an Arch ISO template used by MX/antiX snapshot and remaster workflows. It ships a prepared bootloader tree and a placeholder `arch/` layout that is populated at build time.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/arch-iso-template)
 
-## What’s Included
-- `arch-iso-template/` — the template filesystem used to build the ISO.
-- `arch-iso-template/boot/grub/` — GRUB configs, themes, and boot assets.
-- `arch-iso-template/arch/README` — expected layout for the Arch ISO files.
-- `build.sh` — builds a distributable Arch package containing the template.
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## Build
-Build the package from the repo root:
+## Architecture
+
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
+
+## Install
+
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
 ```bash
-./build.sh --arch
+git clone https://github.com/Interested-Deving-1896/arch-iso-template.git
+cd arch-iso-template
 ```
 
-To write artifacts to a custom directory:
+## Usage
 
-```bash
-./build.sh --arch --out /path/to/output
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/arch-iso-template`](https://github.com/Interested-Deving-1896/arch-iso-template) and mirrored through:
+
+```
+Interested-Deving-1896/arch-iso-template  ──►  OpenOS-Project-OSP/arch-iso-template  ──►  OpenOS-Project-Ecosystem-OOC/arch-iso-template
 ```
 
-The package is written to `build/` by default.
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-## Expected Arch Layout
-The `arch-iso-template/arch/README` file documents the expected layout. In short, the build process expects files like:
+## Contributors
 
-- `arch/boot/x86_64/vmlinuz-linux`
-- `arch/boot/x86_64/archiso.img`
-- `arch/x86_64/airootfs.sfs`
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-Additional optional metadata files are described in the README inside the template.
+## Origins
 
-## Notes
-- `build.sh` uses `makepkg` and assumes a working Arch-style packaging toolchain.
-- Large binary assets under `arch-iso-template/boot/grub/` are vendored; update them only when intentionally changing boot visuals or configs.
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
 ## License
-See `LICENSE`.
+
+<!-- AI:start:license -->
+[GPL-3.0](https://github.com/Interested-Deving-1896/arch-iso-template/blob/main/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
